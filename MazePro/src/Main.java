@@ -13,8 +13,7 @@ import java.util.*;
 public class Main extends Application{
 	public static int delta = 2;
 	public static ArrayList<Rectangle> walls = new ArrayList<Rectangle>();
-	Rectangle player;
-	Rectangle finish;
+	Rectangle player, finish;
 	public long startTime;
 	Group group;
 	public boolean first = true;
@@ -85,7 +84,7 @@ public class Main extends Application{
 	private void alertWinner(){
 		long currentTime = System.currentTimeMillis();
 		long hello = currentTime - startTime;
-		double seconds = hello / 1000.0;
+		double seconds = Math.round(hello / 1000.0);
 		Alert alert = new Alert(AlertType.INFORMATION);
 		alert.setTitle("Winner");
 		alert.setHeaderText("You are the Winner!!");
