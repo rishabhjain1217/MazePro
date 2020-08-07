@@ -1,4 +1,4 @@
-# MazePro
+# Maze Pro
 Final Project Computer Science A
 
 This project uses recursive backtracking to create a random maze of a given size. Using this given maze, an implementation of javafx allows for a virtual maze to be displayed.
