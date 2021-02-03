@@ -3,8 +3,7 @@ import java.util.Arrays;
  
 
 public class MazeGenerator {
-	private final int x;
-	private final int y;
+	private final int x, y;
 	private final int[][] maze;
 	private int[][] grid;
  
@@ -75,9 +74,7 @@ public class MazeGenerator {
  
 	private enum DIR {
 		N(1, 0, -1), S(2, 0, 1), E(4, 1, 0), W(8, -1, 0);
-		private final int bit;
-		private final int dx;
-		private final int dy;
+		private final int bit, dx, dy;
 		private DIR opposite;
  
 		static {
